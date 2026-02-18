@@ -1,24 +1,99 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Kids Arena</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {font-family: Arial, sans-serif; margin:0; background:#f4f7fb; color:#333;}
-        header {background:#4A90E2; color:white; padding:20px; text-align:center;}
-        nav {background:#333; padding:10px; text-align:center;}
-        nav a {color:white; margin:0 15px; text-decoration:none;}
-        section {padding:40px; text-align:center;}
-        footer {background:#222; color:white; text-align:center; padding:15px;}
-        .btn {display:inline-block; padding:12px 20px; background:#4CAF50; color:white; text-decoration:none; border-radius:5px;}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kids Arena</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+}
+header {
+    text-align: center;
+    padding: 60px 20px;
+}
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+header p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+nav {
+    background: rgba(0,0,0,0.2);
+    text-align: center;
+    padding: 15px;
+}
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+.section {
+    background: white;
+    color: #333;
+    padding: 60px 20px;
+    text-align: center;
+}
+.section h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+.card {
+    background: #f4f6f9;
+    padding: 30px;
+    width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.download-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+}
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+
 </head>
 <body>
+
 <header>
     <h1>Kids Arena</h1>
-    <p>Fun • Learning • Adventure</p>
+    <p>Learn • Play • Grow</p>
 </header>
+
 
 <nav>
     <a href="index.html">Home</a>
@@ -28,14 +103,29 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-<section>
+<section class="section">
     <h2>Welcome to Kids Arena</h2>
-    <p>An educational and entertaining game designed for children and families.</p>
-    <a class="btn" href="#">Download on Google Play (Coming Soon)</a>
+    <p>An educational and entertaining app designed for children and families.</p>
+    <div class="features">
+        <div class="card">
+            <h3>📚 Learning Games</h3>
+            <p>Fun spelling, letters and grammar challenges.</p>
+        </div>
+        <div class="card">
+            <h3>🎯 Skill Building</h3>
+            <p>Progressive levels for ages 3–15.</p>
+        </div>
+        <div class="card">
+            <h3>👨‍👩‍👧 Parent Friendly</h3>
+            <p>Safe and structured learning environment.</p>
+        </div>
+    </div>
+    <a class="download-btn" href="#">Download on Google Play (Coming Soon)</a>
 </section>
 
 <footer>
     © 2026 Kids Arena. All rights reserved.
 </footer>
+
 </body>
 </html>
